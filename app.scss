@@ -1,4 +1,3 @@
-
 @charset 'UTF-8';
 // 1. Configuration and helpers
 @import
@@ -23,8 +22,7 @@
   'layout/footer';
 
 // 5. Components
-
-
+@import "components/cookie-consent";
 // 6. Page-specific styles
 
 // 7. Themes
