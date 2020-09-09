@@ -40,3 +40,15 @@
         @warn 'Invalid breakpoint: #{$breakpoint}.';
     }
 }
+
+@mixin bg-variant($parent, $color, $ignore-warning: true) {
+    #{$parent} {
+        background-color: $color !important;
+    }
+    a#{$parent},
+    button#{$parent} {
+        @include hover-focus {
+            background-color: darken($color, 10%) !important;
+        }
+    }
+}
