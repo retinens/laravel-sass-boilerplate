@@ -6,6 +6,3 @@
 .text-lg { font-size: $font-size-lg !important; }
 .text-xl { font-size: $font-size-xl !important; }
 
-@each $color, $value in $colors {
-  @include text-emphasis-variant(".text-#{$color}", $value);
-}
